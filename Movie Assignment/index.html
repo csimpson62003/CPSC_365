@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies Review</title>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <div>
+            <h1>
+                Movies Dot Com
+            </h1>
+        </div>
+        <div>
+            <!-- As a user, I would like to browse for movies by category that I hope I will enjoy. Effort: 2 -->
+             <p>Pick Movies based on a category</p>
+             <form action="getMovieRecommendations.php" method="GET">
+
+                <select name="category" required>
+                    <option value="1">Action</option>
+                    <option value="2">Animation</option>
+                    <option value="3">Children</option>
+                    <option value="4">Classics</option>
+                    <option value="5">Comedy</option>
+                    <option value="6">Documentary</option>
+                    <option value="7">Drama</option>
+                    <option value="8">Family</option>
+                    <option value="9">Foreign</option>
+                    <option value="10">Games</option>
+                    <option value="11">Horror</option>
+                    <option value="12">Music</option>
+                    <option value="13">New</option>
+                    <option value="14">Sci-Fi</option>
+                    <option value="15">Sports</option>
+                    <option value="16">Travel</option>
+                </select>
+                <input type="submit" name="getMovieCategoriesSubmit">
+             </form>
+        </div>
+
+            <div>
+                <!-- As a user, I would like film recommendations  appropriate to my age. (PG-13 is 13, R is 17 or older, G and PG no age limits) Effort: 3 -->
+                 <p>Pick Movies based on a category & rating</p>
+                 <form action="getMovieRecommendations.php" method="GET">
+    
+                    <select name="category">
+                        <option value="1">Action</option>
+                        <option value="2">Animation</option>
+                        <option value="3">Children</option>
+                        <option value="4">Classics</option>
+                        <option value="5">Comedy</option>
+                        <option value="6">Documentary</option>
+                        <option value="7">Drama</option>
+                        <option value="8">Family</option>
+                        <option value="9">Foreign</option>
+                        <option value="10">Games</option>
+                        <option value="11">Horror</option>
+                        <option value="12">Music</option>
+                        <option value="13">New</option>
+                        <option value="14">Sci-Fi</option>
+                        <option value="15">Sports</option>
+                        <option value="16">Travel</option>
+                    </select>
+                    <select name="rating">
+                        <!-- enum('G','PG','PG-13','R','NC-17')  -->
+                        <option value="G">G</option>
+                        <option value="PG">PG</option>
+                        <option value="PG-13">PG-13</option>
+                        <option value="R">R</option>
+                        <option value="NC-17">NC-17</option>
+                    </select>
+                    <input type="submit" name="getMovieRatingSubmit">
+                 </form>
+            </div>
+
+
+
+            <div>
+                <!-- As a user, I would like to browse for movies by actor that I hope I will enjoy. Effort:2 -->
+
+                 <p>Pick Movies based on a specific actor's last name</p>
+                 <form action="getMovieRecommendations.php" method="GET">
+                    <input type="text" name="actorName" maxlength="50" required>
+                    <input type="submit" name="getMovieActorSubmit">
+                 </form>
+            </div>
+
+          
+    </body>
+</html>
