@@ -1,66 +1,79 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .header {
-    background-color: #333;
-    color: #fff;
+    width: 100%;
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .header h1 {
-    margin: 0;
+    color: #e50914;
     font-size: 2.5em;
+    text-transform: uppercase;
 }
 
 .content {
-    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .movie {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .movie-title {
+    color: #e50914;
     font-size: 1.5em;
-    color: #333;
-    margin: 0;
+    margin-bottom: 10px;
+}
+
+.rating-label {
+    font-size: 1em;
+    color: #b3b3b3;
 }
 
 .movie-description {
     font-size: 1em;
-    color: #555;
-    margin-top: 5px;
-}
-.rating-label {
-    color: red;
-    font-weight: bold;
-    font-size: 0.75em;
+    color: #e5e5e5;
+    margin-bottom: 10px;
 }
 
 .actors-list {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     margin-top: 10px;
 }
 
 .actor-name {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #b3b3b3;
 }
 
-.error {
-    color: red;
-    font-weight: bold;
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
